@@ -2,6 +2,7 @@ import includes from 'lodash/collection/includes';
 import assign from 'lodash/object/assign';
 import request from 'superagent';
 import React from 'react';
+import Translation from '../../components/translation/translation';
 import Message from '../../components/message/message';
 import {getMessage} from '../../components/intl/intl';
 import {PropTypes} from '../../helpers/prop-types/prop-types';
@@ -147,6 +148,19 @@ export default class ProspectForm extends React.Component {
           </label>
           <input className='input input--stacked' id='prospect_phone_number' name='prospect[phone_number]'
             placeholder={getMessage(messages, 'prospect_form.phone_placeholder')} required type='text' />
+
+          <Translation locales='fr'>
+            <label className='label label--stacked' htmlFor='prospect_metadata_number_of_payments'>
+              Combien de paiements souhaitez-vous collecter chaque mois?
+            </label>
+            <select className='input--stacked'
+            id='prospect_metadata_number_of_payments'
+            name='prospect[metadata][number_of_payments]'>
+              <option disabled selected>Choisissez le nombre de paiements</option>
+              <option value='0-50'>0-50</option>
+              <option value='50+'>50+</option>
+            </select>
+          </Translation>
 
           <button className='btn btn--block u-margin-Tl' type='submit'>
             <Message pointer='prospect_form.submit' />
