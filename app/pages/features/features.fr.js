@@ -166,7 +166,7 @@ export default class FeaturesFr extends React.Component {
             <div className='site-container u-text-center u-padding-Vxxl'>
               <div className='grid u-padding-Vxl'>
                 <div className='grid__cell u-size-1of2 u-text-center'>
-                  <img src='/images/products/real-time-reports.jpg' className='basic-page__real-time-reports-image' />
+                  <img src='/images/fr/basic-payment-timeline-fr@2x.jpg' className='basic-page__real-time-reports-image' />
                 </div>
                 <div className='grid__cell u-size-1of2 u-margin-Tl'>
                   <h2 className='u-text-heading u-color-heading u-text-l u-text-light u-margin-Bl u-margin-Ts'>
@@ -222,7 +222,7 @@ export default class FeaturesFr extends React.Component {
                   </a>
                 </div>
                 <div className='grid__cell u-size-1of2 u-text-center'>
-                  <img src='/images/features/payment-page--gyms.jpg' className='vertical-page__mobile-image' />
+                  <img src='/images/fr/basic-payment-page-fr@2x.jpg' />
                 </div>
               </div>
             </div>
