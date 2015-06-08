@@ -22,10 +22,10 @@ function ifLocaleWithContext(context) {
 function renderText(component) {
   const result = ReactTestUtils.renderIntoDocument(component);
   const elements = ReactTestUtils.scryRenderedDOMComponentsWithTag(result, 'span');
-  if (elements.length == 0) {
+
+  if (elements.length === 0) {
     return null;
-  }
-  else if (elements.length == 1) {
+  } else if (elements.length === 1) {
     const element = ReactTestUtils.findRenderedDOMComponentWithTag(result, 'span');
     return element.getDOMNode().textContent;
   }
@@ -75,8 +75,6 @@ describe('IfLocale Component', () => {
     });
   });
 
-
-
   describe('where the hasInstantSignup property is specified', () => {
     describe('and instant signup is available', () => {
       it('it shows the message', () => {
@@ -118,8 +116,6 @@ describe('IfLocale Component', () => {
       });
     });
   });
-
-
 
   describe('where the hasPercentagePricing property is specified', () => {
     describe('and percentage pricing is available', () => {
