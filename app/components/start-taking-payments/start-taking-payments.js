@@ -1,5 +1,4 @@
 import React from 'react';
-import Translation from '../translation/translation';
 import IfLocale from '../if-locale/if-locale';
 
 export default class StartTakingPaymentsCTA extends React.Component {

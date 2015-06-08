@@ -5,7 +5,6 @@ import InlineMessage from '../../components/inline-message/inline-message';
 import HomeEn from './home.en';
 import HomeFr from './home.fr';
 import HomeDe from './home.de';
-import Translation from '../../components/translation/translation';
 import IfLocale from '../../components/if-locale/if-locale';
 
 export default class Home extends React.Component {
