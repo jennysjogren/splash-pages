@@ -70,8 +70,8 @@ export default class DeveloperCommunityManager extends React.Component {
         <p className='para'>You enjoy building strong relationships. You're enthusiastic,
           friendly and an excellent communicator.
         </p>
-        <p className='para'>You have experience writing code, and ideally have worked in
-          an engineering-focussed company.
+        <p className='para'>You have some experience writing or tinkering with code,
+          and ideally have worked in an engineering-focussed company.
         </p>
         <p className='para'>You actively participate in the tech community. You're
           familiar with the landscape, you've attended a few meetups or hackdays, and
