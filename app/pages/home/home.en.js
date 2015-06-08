@@ -1,6 +1,6 @@
 import React from 'react';
 import Translation from '../../components/translation/translation';
-import IfLocalScheme from '../../components/if-local-scheme/if-local-scheme';
+import IfLocale from '../../components/if-locale/if-locale';
 import Message from '../../components/message/message';
 import Link from '../../components/link/link';
 import HowDdWorks from '../../components/how-dd-works/how-dd-works';
@@ -13,7 +13,6 @@ import TickSquareIcon from '../../icons/svg/tick-square';
 import ProIcon from '../../icons/svg/pro';
 import ShopIcon from '../../icons/svg/shop';
 import IntegrationsIcon from '../../icons/svg/integrations';
-
 
 export default class HomeEn extends React.Component {
   displayName = 'HomeEn'
@@ -58,7 +57,7 @@ export default class HomeEn extends React.Component {
                 </p>
               </div>
 
-              <IfLocalScheme name="sepa">
+              <IfLocale domesticScheme="sepa">
                 <div className='grid__cell u-size-1of3 u-text-center'>
                   <figure className='svg-icon u-center'>
                     <TickSquareIcon className='svg-icon__image svg-icon__image--shadow u-fill-yellow' />
@@ -71,8 +70,8 @@ export default class HomeEn extends React.Component {
                     Accept payments with Bacs Direct Debit and SEPA Direct Debit
                   </p>
                 </div>
-              </IfLocalScheme>
-              <IfLocalScheme name="bacs">
+              </IfLocale>
+              <IfLocale domesticScheme="bacs">
                 <div className='grid__cell u-size-1of3 u-text-center'>
                   <figure className='svg-icon u-center'>
                     <MoneyFlowerIcon className='svg-icon__image svg-icon__image--shadow u-fill-yellow' />
@@ -85,11 +84,11 @@ export default class HomeEn extends React.Component {
                     Less than half the cost of Paypal, with easy-to-understand pricing
                   </p>
                 </div>
-              </IfLocalScheme>
+              </IfLocale>
 
             </div>
 
-            <IfLocalScheme name="bacs">
+            <IfLocale domesticScheme="bacs">
               <p className='u-color-p u-margin-Txxl u-padding-Tm'>
                 Want to learn more about
                 Direct Debit?
@@ -99,7 +98,7 @@ export default class HomeEn extends React.Component {
               )}>
                 <HowDdWorks />
               </Modal>
-            </IfLocalScheme>
+            </IfLocale>
           </div>
         </div>
         <Translation locales={['en-GB','en-IE']}>
@@ -182,7 +181,7 @@ export default class HomeEn extends React.Component {
             </div>
           </div>
         </div>
-        <Translation locales='en-GB'>
+        <IfLocale hasInstantSignup>
           <hr className='u-margin-An' />
           <div className='site-container u-text-center u-padding-Vxxl'>
             <div className='u-padding-Vxl'>
@@ -190,7 +189,7 @@ export default class HomeEn extends React.Component {
               <p className='u-color-p u-margin-Ts'>No set up costs, no hidden charges, no commitments</p>
             </div>
           </div>
-        </Translation>
+        </IfLocale>
       </Translation>
     );
   }

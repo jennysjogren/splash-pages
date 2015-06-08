@@ -6,6 +6,8 @@ export default {
   phone_local: '076 680 5320',
   country_properties: {
     local_scheme: 'sepa',
+    has_instant_signup: false,
+    has_percentage_pricing: true,
   },
   hero: {
     header: 'Accept recurring payments across Europe',

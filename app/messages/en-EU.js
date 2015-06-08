@@ -4,6 +4,8 @@ export default {
   country: 'Europe',
   country_properties: {
     local_scheme: 'sepa',
+    has_instant_signup: true,
+    has_percentage_pricing: false,
   },
   hero: {
     header: 'Accept recurring payments across Europe',

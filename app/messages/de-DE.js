@@ -4,6 +4,8 @@ export default {
   country: 'Deutschland',
   country_properties: {
     local_scheme: 'sepa',
+    has_instant_signup: false,
+    has_percentage_pricing: false,
   },
   hero: {
     header: 'Wiederkehrende Zahlungen einfach gemacht',
