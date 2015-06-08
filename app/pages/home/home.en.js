@@ -57,7 +57,7 @@ export default class HomeEn extends React.Component {
                 </p>
               </div>
 
-              <IfLocale domesticScheme="sepa">
+              <IfLocale domesticScheme='sepa'>
                 <div className='grid__cell u-size-1of3 u-text-center'>
                   <figure className='svg-icon u-center'>
                     <TickSquareIcon className='svg-icon__image svg-icon__image--shadow u-fill-yellow' />
@@ -71,7 +71,7 @@ export default class HomeEn extends React.Component {
                   </p>
                 </div>
               </IfLocale>
-              <IfLocale domesticScheme="bacs">
+              <IfLocale domesticScheme='bacs'>
                 <div className='grid__cell u-size-1of3 u-text-center'>
                   <figure className='svg-icon u-center'>
                     <MoneyFlowerIcon className='svg-icon__image svg-icon__image--shadow u-fill-yellow' />
@@ -88,7 +88,7 @@ export default class HomeEn extends React.Component {
 
             </div>
 
-            <IfLocale domesticScheme="bacs">
+            <IfLocale domesticScheme='bacs'>
               <p className='u-color-p u-margin-Txxl u-padding-Tm'>
                 Want to learn more about
                 Direct Debit?
@@ -155,7 +155,7 @@ export default class HomeEn extends React.Component {
                 Trusted by thousands of businesses
               </h2>
               <p className='u-text-s u-color-p u-margin-Txs'>
-                <Message pointer="home.trusted_message_scale" />
+                <Message pointer='home.trusted_message_scale' />
                 <br />
                 Whatever your scale, GoCardless works for you.
               </p>
