@@ -11,25 +11,25 @@ export default class IfLocale extends React.Component {
     hasPercentagePricing: React.PropTypes.bool,
     children: React.PropTypes.node.isRequired,
   }
-  
+
   static defaultProps = {
     tagName: 'span',
   }
-  
+
   static contextTypes = {
     messages: React.PropTypes.object.isRequired,
   }
 
   render() {
     const propertiesList = {
-      'domesticScheme': 'local_scheme',
-      'hasInstantSignup': 'has_instant_signup',
-      'hasPercentagePricing': 'has_percentage_pricing',
+      domesticScheme: 'local_scheme',
+      hasInstantSignup: 'has_instant_signup',
+      hasPercentagePricing: 'has_percentage_pricing',
     };
-    
+
     const isVisible = every(propertiesList, function(messageName, propName) {
-      return this.props[propName] === undefined || 
-        this.props[propName] === getMessage(this.context.messages, 'country_properties.'+messageName);
+      return this.props[propName] === undefined ||
+        this.props[propName] === getMessage(this.context.messages, 'country_properties.' + messageName);
     }, this);
 
     if (!isVisible) { return null; }
