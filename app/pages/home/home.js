@@ -6,6 +6,7 @@ import HomeEn from './home.en';
 import HomeFr from './home.fr';
 import HomeDe from './home.de';
 import Translation from '../../components/translation/translation';
+import IfLocale from '../../components/if-locale/if-locale';
 
 export default class Home extends React.Component {
   displayName = 'Home'
@@ -25,12 +26,12 @@ export default class Home extends React.Component {
                   <Message pointer='hero.desc' />
                 </div>
                 <div className='u-text-center u-margin-Tl'>
-                  <Translation locales={['en','fr','de']} exclude={['en-GB']}>
+                  <IfLocale hasInstantSignup={false}>
                     <a href='#learn-more' id='track-hero-learn-more' className='btn btn--invert btn--move u-size-3of12'>
                       <Message pointer='cta.more' />
                     </a>
-                  </Translation>
-                  <Translation locales='en-GB'>
+                  </IfLocale>
+                  <IfLocale hasInstantSignup>
                     <a href='#learn-more' id='track-hero-learn-more' className='btn btn--invert btn--move u-size-2of12'>
                       <Message pointer='cta.more' />
                     </a>
@@ -39,7 +40,7 @@ export default class Home extends React.Component {
                       id='track-hero-merchants-new'>
                       <Message pointer='cta.pro_signup' />
                     </a>
-                  </Translation>
+                  </IfLocale>
                 </div>
               </div>
             </div>
