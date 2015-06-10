@@ -16,7 +16,7 @@ export default class FaqProDashboardPage extends React.Component {
       <Page isInverted={false}>
         <FaqPage
         category='faq.pro_dashboard'
-        title={(<Message pointer='faq.title' />)}
+        title={(<Message pointer='faq_pro_dashboard.faq_title' />)}
         subtitle={(<Message pointer='faq_pro_dashboard.title' />)}>
           {this.props.children}
         </FaqPage>
