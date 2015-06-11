@@ -1,5 +1,6 @@
 import React from 'react';
 import Translation from '../../components/translation/translation';
+import IfLocale from '../../components/if-locale/if-locale';
 import Message from '../../components/message/message';
 import Link from '../../components/link/link';
 import HowDdWorks from '../../components/how-dd-works/how-dd-works';
@@ -56,7 +57,7 @@ export default class HomeEn extends React.Component {
                 </p>
               </div>
 
-              <Translation locales={['en']} exclude={['en-GB']}>
+              <IfLocale domesticScheme='sepa'>
                 <div className='grid__cell u-size-1of3 u-text-center'>
                   <figure className='svg-icon u-center'>
                     <TickSquareIcon className='svg-icon__image svg-icon__image--shadow u-fill-yellow' />
@@ -69,8 +70,8 @@ export default class HomeEn extends React.Component {
                     Accept payments with Bacs Direct Debit and SEPA Direct Debit
                   </p>
                 </div>
-              </Translation>
-              <Translation locales='en-GB'>
+              </IfLocale>
+              <IfLocale domesticScheme='bacs'>
                 <div className='grid__cell u-size-1of3 u-text-center'>
                   <figure className='svg-icon u-center'>
                     <MoneyFlowerIcon className='svg-icon__image svg-icon__image--shadow u-fill-yellow' />
@@ -83,11 +84,11 @@ export default class HomeEn extends React.Component {
                     Less than half the cost of Paypal, with easy-to-understand pricing
                   </p>
                 </div>
-              </Translation>
+              </IfLocale>
 
             </div>
 
-            <Translation locales='en-GB'>
+            <IfLocale domesticScheme='bacs'>
               <p className='u-color-p u-margin-Txxl u-padding-Tm'>
                 Want to learn more about
                 Direct Debit?
@@ -97,7 +98,7 @@ export default class HomeEn extends React.Component {
               )}>
                 <HowDdWorks />
               </Modal>
-            </Translation>
+            </IfLocale>
           </div>
         </div>
         <Translation locales={['en-GB','en-IE']}>
@@ -154,7 +155,7 @@ export default class HomeEn extends React.Component {
                 Trusted by thousands of businesses
               </h2>
               <p className='u-text-s u-color-p u-margin-Txs'>
-                <Message pointer="home.trusted_message_scale" />
+                <Message pointer='home.trusted_message_scale' />
                 <br />
                 Whatever your scale, GoCardless works for you.
               </p>
@@ -180,7 +181,7 @@ export default class HomeEn extends React.Component {
             </div>
           </div>
         </div>
-        <Translation locales='en-GB'>
+        <IfLocale hasInstantSignup>
           <hr className='u-margin-An' />
           <div className='site-container u-text-center u-padding-Vxxl'>
             <div className='u-padding-Vxl'>
@@ -188,7 +189,7 @@ export default class HomeEn extends React.Component {
               <p className='u-color-p u-margin-Ts'>No set up costs, no hidden charges, no commitments</p>
             </div>
           </div>
-        </Translation>
+        </IfLocale>
       </Translation>
     );
   }
