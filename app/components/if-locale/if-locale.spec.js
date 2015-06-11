@@ -22,7 +22,6 @@ function ifLocaleWithContext(context) {
 function renderText(component) {
   const result = ReactTestUtils.renderIntoDocument(component);
   const elements = ReactTestUtils.scryRenderedDOMComponentsWithTag(result, 'span');
-
   if (elements.length === 0) {
     return null;
   } else if (elements.length === 1) {
@@ -43,13 +42,11 @@ describe('IfLocale Component', () => {
             },
           },
         });
-
         const component = (
           <TestIfLocale domesticScheme='bacs'>
             Bacs message
           </TestIfLocale>
         );
-
         expect(renderText(component)).toEqual('Bacs message');
       });
     });
@@ -63,13 +60,11 @@ describe('IfLocale Component', () => {
             },
           },
         });
-
         const component = (
           <TestIfLocale domesticScheme='bacs'>
             Bacs message
           </TestIfLocale>
         );
-
         expect(renderText(component)).toEqual(null);
       });
     });
@@ -85,13 +80,11 @@ describe('IfLocale Component', () => {
             },
           },
         });
-
         const component = (
           <TestIfLocale hasInstantSignup>
             Sign up
           </TestIfLocale>
         );
-
         expect(renderText(component)).toEqual('Sign up');
       });
     });
@@ -105,13 +98,11 @@ describe('IfLocale Component', () => {
             },
           },
         });
-
         const component = (
           <TestIfLocale hasInstantSignup>
             Sign up
           </TestIfLocale>
         );
-
         expect(renderText(component)).toEqual(null);
       });
     });
@@ -127,13 +118,11 @@ describe('IfLocale Component', () => {
             },
           },
         });
-
         const component = (
           <TestIfLocale hasPercentagePricing>
             foo
           </TestIfLocale>
         );
-
         expect(renderText(component)).toEqual('foo');
       });
     });
@@ -147,13 +136,11 @@ describe('IfLocale Component', () => {
             },
           },
         });
-
         const component = (
           <TestIfLocale hasPercentagePricing>
             foo
           </TestIfLocale>
         );
-
         expect(renderText(component)).toEqual(null);
       });
     });
