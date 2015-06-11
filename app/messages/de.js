@@ -118,9 +118,9 @@ export default {
     cta: 'Besuchen Sie unseren Blog',
   },
   guides: {
-    title: 'Handbuch',
-    nav_title: 'Handbuch',
-    path: '/guides/sepa/',
+    title: 'SEPA Handbuch',
+    nav_title: 'SEPA Handbuch',
+    path: '/de/handbuch/sepa/',
   },
   legal: {
     title: 'Rechtliche Hinweise',
