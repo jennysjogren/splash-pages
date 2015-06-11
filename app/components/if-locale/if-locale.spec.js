@@ -31,7 +31,6 @@ function renderText(component) {
 }
 
 describe('IfLocale Component', () => {
-
   describe('where the domesticScheme property is specified', () => {
     describe('and matches the current locale scheme', () => {
       it('it shows the message', () => {
@@ -145,6 +144,4 @@ describe('IfLocale Component', () => {
       });
     });
   });
-
-
 });
