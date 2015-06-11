@@ -24,6 +24,10 @@ CWD="./dist/"
 
 ulimit -n 4096
 
+# Make sure we don't overwrite guides/blog content (shared s3 bucket)
+# ! Run before redirects which will include blacklisted paths to guides/blog
+./script/check-blacklist-pages --cwd $CWD
+
 ./script/redirects --cwd $CWD --redirects config/redirects.json
 
 AWS_SECRET_ACCESS_KEY=$GC_AWS_SECRET AWS_ACCESS_KEY_ID=$GC_AWS_ACCESS_KEY \

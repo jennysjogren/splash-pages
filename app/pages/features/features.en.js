@@ -16,6 +16,7 @@ import PhoneIcon from '../../icons/svg/phone';
 import Link from '../../components/link/link';
 import IfLinkExists from '../../components/if-link-exists/if-link-exists';
 import Translation from '../../components/translation/translation';
+import IfLocale from '../../components/if-locale/if-locale';
 
 export default class FeaturesEn extends React.Component {
   displayName = 'FeaturesEn'
@@ -117,7 +118,7 @@ export default class FeaturesEn extends React.Component {
                       <ClockIcon className='svg-icon__image svg-icon__image--small u-fill-dark-gray' />
                     </figure>
 
-                    <Translation locales={['en']} exclude={['en-GB']}>
+                    <IfLocale hasInstantSignup={false}>
                       <div className='u-text-heading u-color-heading u-text-light u-text-no-smoothing u-text-s u-margin-Tm'>
                         Get started in 24 hours
                       </div>
@@ -125,15 +126,15 @@ export default class FeaturesEn extends React.Component {
                         All you need is a bank account in <Message pointer='country' />. <Link to='contact_sales'>Contact us</Link> in
                         order to get started.
                       </p>
-                    </Translation>
-                    <Translation locales='en-GB'>
+                    </IfLocale>
+                    <IfLocale hasInstantSignup>
                       <div className='u-text-heading u-color-heading u-text-light u-text-no-smoothing u-text-s u-margin-Tm'>
                         Get started in minutes
                       </div>
                       <p className='u-color-p u-margin-Txs'>
                         All you need to get started is a UK bank account. Sign up now and you could be taking payments in minutes.
                       </p>
-                    </Translation>
+                    </IfLocale>
                   </div>
                   <div className='grid__cell u-size-1of3'>
                     <figure className='svg-icon svg-icon--small'>
@@ -291,18 +292,18 @@ export default class FeaturesEn extends React.Component {
                     automatically sending customers back<br />to your site after paying.
                   </p>
                   <h3 className='u-text-s'>A safe and easy way to pay</h3>
-                  <Translation locales={['en']} exclude={['en-GB']}>
+                  <IfLocale domesticScheme='sepa'>
                     <p className='u-size-5of6 u-color-p u-margin-Bm'>
                       With Direct Debit, there's no need for customers to worry about missing a payment.
                       Customers are also protected by SEPA Direct Debit Customer Protection.
                     </p>
-                  </Translation>
-                  <Translation locales='en-GB'>
+                  </IfLocale>
+                  <IfLocale domesticScheme='bacs'>
                     <p className='u-size-5of6 u-color-p u-margin-Bm'>
                       With Direct Debit, there's no need for customers to worry about missing a payment and
                       they're always protected by the Direct Debit Guarantee.
                     </p>
-                  </Translation>
+                  </IfLocale>
                   <IfLinkExists to='example_checkout'>
                     <Link to='example_checkout'
                     className='u-color-primary u-text-upcase u-text-xxs u-text-heading u-text-semi u-block u-margin-Txl'>

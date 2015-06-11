@@ -1,12 +1,12 @@
 import React from 'react';
-import Translation from '../translation/translation';
+import IfLocale from '../if-locale/if-locale';
 
 export default class StartTakingPaymentsCTA extends React.Component {
   displayName = 'StartTakingPaymentsCTA'
 
   render() {
     return (
-      <Translation locales='en-GB'>
+      <IfLocale hasInstantSignup>
         <div className='site-container u-text-center u-padding-Vxxl'>
           <div className='u-padding-Vxl'>
             <h2 className='u-text-heading u-color-heading u-text-light u-text-l u-margin-Bm'>
@@ -16,7 +16,7 @@ export default class StartTakingPaymentsCTA extends React.Component {
             <p className='u-color-p u-margin-Ts'>No set up costs, no hidden charges, no commitments</p>
           </div>
         </div>
-      </Translation>
+      </IfLocale>
     );
   }
 }

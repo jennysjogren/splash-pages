@@ -12,7 +12,9 @@ fi
 set -e errexit
 ulimit -n 10240
 
-rm -rf dist
+CWD="./dist/"
+
+rm -rf $CWD
 ANIMATIONS_DISABLED=$ANIMATIONS_DISABLED node_modules/.bin/webpack --stats --progress --config ./webpack/prod.config.js
 
 PORT=$PORT node ./index.js &
@@ -25,7 +27,7 @@ set +e errexit
 # wait for the server to start up
 while ! echo exit | nc localhost $PORT; do sleep 1; done
 
-./script/dump-html "http://localhost:$PORT" 'dist'
+./script/dump-html "http://localhost:$PORT" $CWD
 DUMP_EXIT=$?
 
 kill $SERVER_PID
@@ -33,7 +35,7 @@ kill $SERVER_PID
 set -e errexit
 
 if [ $DUMP_EXIT -eq 0 ]; then
-  cp -R public/* dist
+  cp -R public/* $CWD
 else
   exit $DUMP_EXIT
 fi

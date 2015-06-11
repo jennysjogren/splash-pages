@@ -1,0 +1,31 @@
+#!/usr/bin/env babel-node
+
+import fs from 'fs';
+import path from 'path';
+
+import minimist from 'minimist';
+
+const argv = minimist(process.argv.slice(2));
+
+// Make sure we don't overwrite guides/blog content (shared s3 bucket)
+var blacklistedPages = [
+  '/guides',
+  '/direct-debit',
+  '/fr/guides',
+  '/de/handbuch',
+  '/blog',
+];
+blacklistedPages.forEach(function(pagePath) {
+  var stat;
+  /*eslint-disable no-empty*/
+  try {
+    stat = fs.statSync(path.join(process.cwd(), argv.cwd, pagePath));
+  } catch (e) {
+    //ignore
+  }
+  /*eslint-disable no-empty*/
+
+  if (stat && (stat.isFile() || stat.isDirectory())) {
+    throw new Error(`Blacklisted page: ${pagePath}, please remove it before deploying`);
+  }
+});
