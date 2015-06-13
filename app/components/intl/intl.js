@@ -15,7 +15,7 @@ export function getMessage(messages, pointer) {
     }, messages);
   } finally {
     if (message === undefined) {
-      throw new ReferenceError(`Could not find Intl pointer: ${pointer}`);
+      throw new ReferenceError(`Could not find Message pointer: ${pointer}`);
     }
   }
 
