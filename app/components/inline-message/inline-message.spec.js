@@ -116,11 +116,11 @@ describe('InlineMessage Component', () => {
 
         expect(() => {
           ReactTestUtils.renderIntoDocument(
-            <StubbedInlineMessage locale='en-GB' pointer='doesnt.exist'>
+            <StubbedInlineMessage locale='en-GB' pointer='lang.name'>
               Inline message
             </StubbedInlineMessage>
           );
-        }).toThrow(new ReferenceError('Could not find Intl pointer: doesnt.exist'));
+        }).toThrow(new ReferenceError('Could not find Message pointer: lang.name, locale: fr-FR'));
       });
     });
   });
