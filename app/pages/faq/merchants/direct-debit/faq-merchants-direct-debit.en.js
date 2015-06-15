@@ -1,4 +1,5 @@
 import React from 'react';
+import IfLocale from '../../../../components/if-locale/if-locale';
 import Translation from '../../../../components/translation/translation';
 
 export default class FaqMerchantsDirectDebitEn extends React.Component {
@@ -8,7 +9,7 @@ export default class FaqMerchantsDirectDebitEn extends React.Component {
     return (
       <Translation locales='en'>
         <h2 className='u-text-heading-light u-text-m u-color-heading'>Direct Debit</h2>
-        <Translation locales='en-GB'>
+        <IfLocale domesticScheme='bacs'>
           <h3 className='section-heading u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
             What is the Direct Debit Guarantee?
           </h3>
@@ -29,9 +30,9 @@ export default class FaqMerchantsDirectDebitEn extends React.Component {
             There is no need to talk to your bank either. We provide you with everything you need to sign up online
             and start taking payments.
           </p>
-        </Translation>
+        </IfLocale>
 
-        <Translation locales={['en']} exclude={['en-GB']}>
+        <IfLocale domesticScheme='sepa'>
           <h3 className='section-heading u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
             What is SEPA Direct Debit?
           </h3>
@@ -71,7 +72,7 @@ export default class FaqMerchantsDirectDebitEn extends React.Component {
           <p className='para'>
             No. We can supply you with one via our partner bank.
           </p>
-        </Translation>
+        </IfLocale>
 
         <h3 className='section-heading u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
           What kind of payments is it good for?
@@ -95,7 +96,7 @@ export default class FaqMerchantsDirectDebitEn extends React.Component {
           <li>Transactions likely to experience chargebacks (e.g., gambling)</li>
         </ul>
 
-        <Translation locales='en-GB'>
+        <IfLocale domesticScheme='bacs'>
           <h3 className='section-heading u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
             What are the payment timings for Direct Debit?
           </h3>
@@ -107,8 +108,8 @@ export default class FaqMerchantsDirectDebitEn extends React.Component {
             Once GoCardless has collected payment from your customer we hold the money for 3 working days
             before sending it directly to your bank account.
           </p>
-        </Translation>
-        <Translation locales={['en']} exclude={['en-GB']}>
+        </IfLocale>
+        <IfLocale domesticScheme='sepa'>
           <h3 className='section-heading u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
             What are the payment timings for SEPA Direct Debit?
           </h3>
@@ -121,7 +122,7 @@ export default class FaqMerchantsDirectDebitEn extends React.Component {
             Once GoCardless has collected payment from your customer you will receive the funds 3 working days
             later in your bank account.
           </p>
-        </Translation>
+        </IfLocale>
 
         <h3 className='section-heading u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
           Can I collect one-off payments using Direct Debit?
@@ -134,7 +135,7 @@ export default class FaqMerchantsDirectDebitEn extends React.Component {
         <h3 className='section-heading u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
           Can I easily change Direct Debit provider?
         </h3>
-        <Translation locales='en-GB'>
+        <IfLocale domesticScheme='bacs'>
           <p className='para'>
             Yes - the <a href='/direct-debit/transferring/'
             className='u-link-color-p u-text-underline'>Direct Debit bulk change</a> process allows you to
@@ -145,8 +146,8 @@ export default class FaqMerchantsDirectDebitEn extends React.Component {
             including Greater Anglia Railways. Your existing customers won't need to take any action
             whatsoever, and we offer this service free of charge.
           </p>
-        </Translation>
-        <Translation locales={['en']} exclude={['en-GB']}>
+        </IfLocale>
+        <IfLocale domesticScheme='sepa'>
           <p className='para'>
             Yes - we just need to amend the SEPA mandate to add the name and Creditor Identifier of the new
             provider. Your customers must be notified of the change but won't need to take any action whatsoever.
@@ -154,7 +155,7 @@ export default class FaqMerchantsDirectDebitEn extends React.Component {
           <p className='para'>
             GoCardless manages this change for you entirely. You have nothing to do and this service is free.
           </p>
-        </Translation>
+        </IfLocale>
       </Translation>
     );
   }

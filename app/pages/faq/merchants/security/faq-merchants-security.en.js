@@ -1,5 +1,6 @@
 import React from 'react';
 import Translation from '../../../../components/translation/translation';
+import IfLocale from '../../../../components/if-locale/if-locale';
 
 export default class FaqMerchantsSecurityEn extends React.Component {
   displayName = 'FaqMerchantsSecurityEn'
@@ -61,14 +62,14 @@ export default class FaqMerchantsSecurityEn extends React.Component {
         <h3 className='section-heading u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
           Is it safe for my customers?
         </h3>
-        <Translation locales={['en']} exclude={['en-GB']}>
+        <IfLocale domesticScheme='sepa'>
           <p className='para'>
             Yes. Your customers are protected by <a href='/guides/sepa/protection/'
             className='u-link-color-p u-text-underline'>SEPA Direct Debit Customer Protection</a> in the Eurozone and
             the <a href='/direct-debit/guarantee/' className='u-link-color-p u-text-underline'>Direct Debit Guarantee</a> in the UK.
           </p>
-        </Translation>
-        <Translation locales='en-GB'>
+        </IfLocale>
+        <IfLocale domesticScheme='bacs'>
           <p className='para'>
             Yes. Your customers are fully protected by the <a href='/direct-debit/guarantee/'
             className='u-link-color-p u-text-underline'>Direct Debit Guarantee</a>.
@@ -76,7 +77,7 @@ export default class FaqMerchantsSecurityEn extends React.Component {
           <p className='para'>
             This entitles them to a full and immediate refund of any payments taken from their account in error.
           </p>
-        </Translation>
+        </IfLocale>
 
         <h3 className='section-heading u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
           Vulnerability Disclosure

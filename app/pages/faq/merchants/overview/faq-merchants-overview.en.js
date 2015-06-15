@@ -1,5 +1,6 @@
 import React from 'react';
 import Translation from '../../../../components/translation/translation';
+import IfLocale from '../../../../components/if-locale/if-locale';
 import Link from '../../../../components/link/link';
 
 export default class FaqMerchantsEn extends React.Component {
@@ -165,7 +166,7 @@ export default class FaqMerchantsEn extends React.Component {
           </li>
         </ul>
 
-        <Translation locales='en-GB'>
+        <IfLocale domesticScheme='bacs'>
           <h3 className='section-heading u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
             Is GoCardless a Bacs-approved bureau?
           </h3>
@@ -173,7 +174,7 @@ export default class FaqMerchantsEn extends React.Component {
             Yes, GoCardless is a <a href='http://www.bacs.co.uk/Bacs/Bureaux/Resources/Pages/ApprovedBureaux.aspx'
             className='u-link-color-p u-text-underline'>Bacs-approved bureau</a>.
           </p>
-        </Translation>
+        </IfLocale>
       </Translation>
     );
   }

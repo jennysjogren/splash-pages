@@ -1,5 +1,6 @@
 import React from 'react';
 import Translation from '../../../../components/translation/translation';
+import IfLocale from '../../../../components/if-locale/if-locale';
 import Message from '../../../../components/message/message';
 
 export default class FaqMerchantsInternationalPayments extends React.Component {
@@ -9,7 +10,7 @@ export default class FaqMerchantsInternationalPayments extends React.Component {
     return (
       <Translation locales='en'>
         <h2 className='u-text-heading-light u-text-m u-color-heading'>International payments</h2>
-        <Translation locales='en-GB'>
+        <IfLocale domesticScheme='bacs'>
           <h3 className='section-heading u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
             Can only UK businesses use GoCardless?
           </h3>
@@ -27,8 +28,8 @@ export default class FaqMerchantsInternationalPayments extends React.Component {
           <p className='para'>
             If you take more than 500 payments a month and want to use our Pro solution, you can be registered anywhere in the world.
           </p>
-        </Translation>
-        <Translation locales={['en']} exclude={['en-GB']}>
+        </IfLocale>
+        <IfLocale domesticScheme='sepa'>
           <h3 className='section-heading u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
             In which countries is GoCardless available?
           </h3>
@@ -36,7 +37,7 @@ export default class FaqMerchantsInternationalPayments extends React.Component {
             GoCardless is available in the UK, Ireland, France and Belgium. GoCardless Pro is available in all countries respecting
             anti-money laundering regulations. You need a bank account in the Eurozone or the UK.
           </p>
-        </Translation>
+        </IfLocale>
 
         <h3 className='section-heading u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
           Where in Europe can I collect from?
@@ -60,7 +61,8 @@ export default class FaqMerchantsInternationalPayments extends React.Component {
           className='u-link-color-p u-text-underline'>the SEPA Direct Debit scheme</a>.
         </p>
 
-        <Translation locales={['en']} exclude={['en-GB']}>
+        { /* Bacs is only an international scheme for SEPA countries */ }
+        <IfLocale domesticScheme='sepa'>
           <h3 className='section-heading u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
             What is Bacs Direct Debit?
           </h3>
@@ -73,7 +75,7 @@ export default class FaqMerchantsInternationalPayments extends React.Component {
             Read more about it in our guide to <a href='/direct-debit/'
             className='u-link-color-p u-text-underline'>the Bacs Direct Debit scheme</a>.
           </p>
-        </Translation>
+        </IfLocale>
 
         <h3 className='section-heading u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
           Which currencies does GoCardless support?

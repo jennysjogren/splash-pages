@@ -3,6 +3,7 @@ import XIcon from '../../icons/svg/x';
 import CheckMarkIcon from '../../icons/svg/checkmark';
 import Message from '../../components/message/message';
 import Translation from '../../components/translation/translation';
+import IfLocale from '../../components/if-locale/if-locale';
 
 export default class ProductComparisonEn extends React.Component {
   displayName = 'ProductComparisonEn'
@@ -57,7 +58,7 @@ export default class ProductComparisonEn extends React.Component {
                 <CheckMarkIcon className='u-fill-dark-gray' alt='✓' />
               </td>
             </tr>
-            <Translation locales={['en']} exclude={['en-GB']}>
+            <IfLocale domesticScheme='sepa'>
               <tr className='comparison-table__row'>
                 <td className='comparison-table__cell u-text-end'>Get your own Creditor ID</td>
                 <td className='comparison-table__cell'>
@@ -67,8 +68,8 @@ export default class ProductComparisonEn extends React.Component {
                   <CheckMarkIcon className='u-fill-dark-gray' alt='✓' />
                 </td>
               </tr>
-            </Translation>
-            <Translation locales='en-GB'>
+            </IfLocale>
+            <IfLocale domesticScheme='bacs'>
               <tr className='comparison-table__row'>
                 <td className='comparison-table__cell u-text-end'>Get your own SUN</td>
                 <td className='comparison-table__cell'>
@@ -78,7 +79,7 @@ export default class ProductComparisonEn extends React.Component {
                   <CheckMarkIcon className='u-fill-dark-gray' alt='✓' />
                 </td>
               </tr>
-            </Translation>
+            </IfLocale>
             <tr className='comparison-table__row'>
               <td className='comparison-table__cell u-text-end'>Create your own payment pages</td>
               <td className='comparison-table__cell'>
@@ -88,7 +89,7 @@ export default class ProductComparisonEn extends React.Component {
                 <CheckMarkIcon className='u-fill-dark-gray' alt='✓' />
               </td>
             </tr>
-            <Translation locales='en-GB'>
+            <IfLocale hasInstantSignup>
               <tr className='comparison-table__row'>
                 <td className='comparison-table__cell u-text-end'>Instant online set-up and approval</td>
                 <td className='comparison-table__cell'>
@@ -98,7 +99,7 @@ export default class ProductComparisonEn extends React.Component {
                   <XIcon className='u-fill-dark-gray' alt='✘' />
                 </td>
               </tr>
-            </Translation>
+            </IfLocale>
             <tr className='comparison-table__row'>
               <td className='comparison-table__cell u-text-end'>Supports businesses in...</td>
               <td className='comparison-table__cell'><Message pointer='country' /></td>
