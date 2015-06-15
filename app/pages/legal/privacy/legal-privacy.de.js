@@ -26,10 +26,10 @@ export default class LegalPrivacyDe extends React.Component {
           beziehen sie sich alle auf GoCardless Ltd., 338-346 Goswell Road, London, EC1V 7LQ, Vereinigtes Königreich.
         </p>
         <p className='para'>
-         Bitte lesen Sie sich diese Richtlinie aufmerksam durch, bevor Sie diese Webseite benutzen.
-         Ihre Privatsphäre ist uns sehr wichtig. Wir haben daher Maßnahmen ergriffen, um sicherzustellen,
-         dass persönliche Informationen oder Daten, die wir von Ihnen erhalten,
-         im Einklang mit den geltenden gesetzlichen Vorschriften erfasst und bearbeitet werden.
+          Bitte lesen Sie sich diese Richtlinie aufmerksam durch, bevor Sie diese Webseite benutzen.
+          Ihre Privatsphäre ist uns sehr wichtig. Wir haben daher Maßnahmen ergriffen, um sicherzustellen,
+          dass persönliche Informationen oder Daten, die wir von Ihnen erhalten,
+          im Einklang mit den geltenden gesetzlichen Vorschriften erfasst und bearbeitet werden.
         </p>
         <p className='para'>
           Wir haben Geschäftsbeziehungen zu Personen, die weder im Zusammenhang mit ihrer gewerblichen noch ihrer selbständigen beruflichen
@@ -40,7 +40,7 @@ export default class LegalPrivacyDe extends React.Component {
         </p>
 
         <h3 className='u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
-        Was regelt diese Datenschutzrichtlinie?
+          Was regelt diese Datenschutzrichtlinie?
         </h3>
         <p className='para'>
           In dieser Richtlinie erhalten Sie Informationen darüber, wie wir personenbezogene Daten,
@@ -57,7 +57,7 @@ export default class LegalPrivacyDe extends React.Component {
         </p>
 
         <h3 className='u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
-        Erfassung und Verwendung von Informationen
+          Erfassung und Verwendung von Informationen
         </h3>
         <p className='para'>
           Wenn Sie unsere Webseite besuchen, können wir automatisch bestimmte systembezogene Informationen über
@@ -73,13 +73,13 @@ export default class LegalPrivacyDe extends React.Component {
           einer Zusammenarbeit ergibt, Ihre Angaben speichern möchten, werden wir Sie um Ihre Zustimmung bitten.
         </p>
         <p className='para'>
-         Der einzige Fall, in dem wir Ihre Angaben für andere Zwecke als diejenigen, die oben angegeben werden,
-         verwenden werden, ist, Ihnen von Zeit zu Zeit Informationen über unsere Dienstleistungen zur Verfügung zu stellen.
-         Dies werden wir jedoch nur tun, wenn (i) wir Ihre ausdrückliche Erlaubnis hierzu haben oder (ii) Sie ein Kunde von
-         uns sind und wir Sie über ähnliche Produkte und Dienstleistungen informieren wie diejenigen,
-         die Sie zuvor bei uns gekauft oder angefragt haben. In jedem Fall können Sie uns kontaktieren,
-         um weitere Werbemitteilungen abzubestellen,
-         und wir werden Sie in jeder derartigen Mitteilung über die Möglichkeit der Abbestellung unterrichten.
+          Der einzige Fall, in dem wir Ihre Angaben für andere Zwecke als diejenigen, die oben angegeben werden,
+          verwenden werden, ist, Ihnen von Zeit zu Zeit Informationen über unsere Dienstleistungen zur Verfügung zu stellen.
+          Dies werden wir jedoch nur tun, wenn (i) wir Ihre ausdrückliche Erlaubnis hierzu haben oder (ii) Sie ein Kunde von
+          uns sind und wir Sie über ähnliche Produkte und Dienstleistungen informieren wie diejenigen,
+          die Sie zuvor bei uns gekauft oder angefragt haben. In jedem Fall können Sie uns kontaktieren,
+          um weitere Werbemitteilungen abzubestellen,
+          und wir werden Sie in jeder derartigen Mitteilung über die Möglichkeit der Abbestellung unterrichten.
         </p>
         <p className='para'>
           Wir können Ihre persönlichen Informationen an unsere Unterauftragnehmer weitergeben,
@@ -87,8 +87,9 @@ export default class LegalPrivacyDe extends React.Component {
           Wir respektieren Ihre Privatsphäre und werden ohne Ihre ausdrückliche Erlaubnis keine persönlichen
           Informationen über Sie an andere Personen oder nicht mit uns verbundene Unternehmen vermieten, verkaufen oder weitergeben.
         </p>
+
         <h3 className='u-text-heading-light u-color-heading u-margin-Vm u-text-s'>
-         Erfassung und Verwendung von Informationen
+          Erfassung und Verwendung von Informationen
         </h3>
         <p className='para'>
           Sie können eine Kopie der personenbezogenen Daten, die wir über Sie speichern und verwenden,
@@ -108,10 +109,10 @@ export default class LegalPrivacyDe extends React.Component {
           Cookies
         </h3>
         <p className='para'>
-         Ein Cookie ist eine kleine Textdatei, die eine Webseite auf Ihre Festplatte oder Ihren Internetbrowser überträgt,
-         um die Nutzung der Webseite zu verfolgen. Cookies werden auf vielen Webseiten benutzt, um Besuchern den Zugriff
-         auf verschiedene Funktionen zu ermöglichen. Durch die in einem Cookie enthaltenen Informationen kann beobachtet werden,
-         wie Sie die Webseite benutzen.
+          Ein Cookie ist eine kleine Textdatei, die eine Webseite auf Ihre Festplatte oder Ihren Internetbrowser überträgt,
+          um die Nutzung der Webseite zu verfolgen. Cookies werden auf vielen Webseiten benutzt, um Besuchern den Zugriff
+          auf verschiedene Funktionen zu ermöglichen. Durch die in einem Cookie enthaltenen Informationen kann beobachtet werden,
+          wie Sie die Webseite benutzen.
         </p>
         <p className='para'>
           Unsere Webseite verwendet Cookies auf zwei Arten:
@@ -153,19 +154,19 @@ export default class LegalPrivacyDe extends React.Component {
           CA 94043, USA ("Google"), um Ihre Nutzung dieser Webseite zu analysieren.
         </p>
         <p className='para'>
-         Google Analytics verwendet Cookies, die Textdateien sind, die auf Ihrem Computer eingestellt werden,
-         um bei der Analyse darüber, wie Sie die Webseite benutzen, zu helfen. Die Informationen, die vom Cookie über
-         Ihre Nutzung der Webseite generiert werden, werden von Google an Server in den Vereinigten Staaten übermittelt
-         und dort gespeichert. Ihre IP-Adresse wird von Google in den Mitgliedsstaaten der
-         Europäischen Union oder in sonstigen Ländern,
-         die Parteien im Vertrag über den Europäischen Wirtschaftsraum sind, gekürzt werden.
+          Google Analytics verwendet Cookies, die Textdateien sind, die auf Ihrem Computer eingestellt werden,
+          um bei der Analyse darüber, wie Sie die Webseite benutzen, zu helfen. Die Informationen, die vom Cookie über
+          Ihre Nutzung der Webseite generiert werden, werden von Google an Server in den Vereinigten Staaten übermittelt
+          und dort gespeichert. Ihre IP-Adresse wird von Google in den Mitgliedsstaaten der
+          Europäischen Union oder in sonstigen Ländern,
+          die Parteien im Vertrag über den Europäischen Wirtschaftsraum sind, gekürzt werden.
         </p>
         <p className='para'>
-           In Bezug auf GoCardless verwendet Google diese Informationen, um Ihre Nutzung der Webseite zu beurteilen,
-           Berichte über die Webseitenaktivität für Webseitenbetreiber zu erstellen und sonstige Dienste in
-           Bezug auf Webseiten- und Internetnutzung zu erbringen. Google wird Ihre IP-Adresse,
-           die während der Nutzung von Google Analytics von Ihrem Browser übermittelt wird,
-           nicht mit anderen von Google geführten Daten verbinden.
+          In Bezug auf GoCardless verwendet Google diese Informationen, um Ihre Nutzung der Webseite zu beurteilen,
+          Berichte über die Webseitenaktivität für Webseitenbetreiber zu erstellen und sonstige Dienste in
+          Bezug auf Webseiten- und Internetnutzung zu erbringen. Google wird Ihre IP-Adresse,
+          die während der Nutzung von Google Analytics von Ihrem Browser übermittelt wird,
+          nicht mit anderen von Google geführten Daten verbinden.
         </p>
         <p className='para'>
           Sie können die Speicherung von Cookies ablehnen, indem Sie in Ihrem Internetbrowser die entsprechenden Einstellungen wählen.
@@ -190,13 +191,13 @@ export default class LegalPrivacyDe extends React.Component {
           Web Beacons sind elektronische Bilder, die auf unseren Webseiten oder in unseren E-Mails benutzt werden können.
         </p>
         <p className='para'>
-        Die meisten Internetbrowser sind so eingestellt, dass sie Cookies standardmäßig akzeptieren. Wenn Sie es vorziehen,
-        können Sie sich entscheiden, Ihren Browser so einzustellen, dass er Cookies entfernt und ablehnt.
-        Wenn Sie sich entscheiden, Cookies zu entfernen oder abzulehnen, könnte sich dies auf bestimmte Features oder Dienste
-        unserer Webseiten auswirken und könnte Cookies entfernen, die dazu dienen, die Nachverfolgung abzustellen,
-        einschließlich des Cookies zur Entfernung von Mixpanel.
-        Zur Entfernung des Mixpanel-Cookies, mit dem unsere Webseite verfolgt wird,
-        benutzen Sie bitte <a href="https://mixpanel.com/optout/">diesen Link</a>.
+          Die meisten Internetbrowser sind so eingestellt, dass sie Cookies standardmäßig akzeptieren. Wenn Sie es vorziehen,
+          können Sie sich entscheiden, Ihren Browser so einzustellen, dass er Cookies entfernt und ablehnt.
+          Wenn Sie sich entscheiden, Cookies zu entfernen oder abzulehnen, könnte sich dies auf bestimmte Features oder Dienste
+          unserer Webseiten auswirken und könnte Cookies entfernen, die dazu dienen, die Nachverfolgung abzustellen,
+          einschließlich des Cookies zur Entfernung von Mixpanel.
+          Zur Entfernung des Mixpanel-Cookies, mit dem unsere Webseite verfolgt wird,
+          benutzen Sie bitte <a href="https://mixpanel.com/optout/">diesen Link</a>.
         </p>
       </Translation>
     );
