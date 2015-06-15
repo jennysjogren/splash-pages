@@ -3,7 +3,7 @@ import Translation from '../../components/translation/translation';
 import IfLocale from '../../components/if-locale/if-locale';
 import Message from '../../components/message/message';
 import Link from '../../components/link/link';
-import IfLinkExists from '../../components/if-link-exists/if-link-exists'
+import IfLinkExists from '../../components/if-link-exists/if-link-exists';
 import { getMessage } from '../../components/intl/intl';
 
 export default class PricingEn extends React.Component {
