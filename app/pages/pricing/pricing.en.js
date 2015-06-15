@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 import Translation from '../../components/translation/translation';
 import IfLocale from '../../components/if-locale/if-locale';
 import Message from '../../components/message/message';
@@ -15,18 +16,13 @@ export default class PricingEn extends React.Component {
 
   render() {
     const hasPercentagePricing = getMessage(this.context.messages, 'country_properties.has_percentage_pricing');
-    var gridCellCss = 'grid__cell u-padding-Vxl u-padding-Rxs';
-    if (hasPercentagePricing) {
-      gridCellCss = 'grid__cell u-size-1of2 u-padding-Vxl u-padding-Rxs';
-    }
-
     return (
       <Translation locales='en'>
         <div className='page-hero--pricing page-hero'>
           <div className='site-container'>
             <div className='grid pricing-options u-center u-padding-Bxl'>
               <IfLocale hasPercentagePricing>
-                <div className={gridCellCss}>
+                <div className={classNames('grid__cell u-padding-Vxl u-padding-Rxs', { 'u-size-1of2': hasPercentagePricing })}>
                   <h1 className='u-text-heading-light u-text-center u-color-invert u-text-l u-padding-Bs'>GoCardless</h1>
                   <div className='u-relative u-background-primary u-padding-Vxl'>
                     <Translation locales='en-GB'>
@@ -69,7 +65,7 @@ export default class PricingEn extends React.Component {
                 </div>
               </IfLocale>
 
-              <div className={gridCellCss}>
+              <div className={classNames('grid__cell u-padding-Vxl u-padding-Rxs', { 'u-size-1of2': hasPercentagePricing })}>
                 <h1 className='u-text-heading-light u-text-center u-color-invert u-text-l u-padding-Bs'>GoCardless Pro</h1>
                 <div className='u-background-dark-gray-darken u-padding-Vxl'>
                   <h2 className='u-text-heading-light u-text-center u-color-invert u-text-xl'>
