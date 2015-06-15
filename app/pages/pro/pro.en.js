@@ -1,6 +1,5 @@
 import React from 'react';
 import Translation from '../../components/translation/translation';
-import IfLocale from '../../components/if-locale/if-locale';
 import Message from '../../components/message/message';
 import ProductComparison from '../../components/product-comparison/product-comparison';
 import StickyNav from '../../components/sticky-nav/sticky-nav';
@@ -183,7 +182,7 @@ export default class ProEn extends React.Component {
                     <p className='u-text-s u-color-p u-margin-Ts'>
                       GoCardless Pro is the only product that enables you to collect
                       Direct Debit payments from the UK and the Eurozone through a single integration.
-                      With our API, your business can take payments from over 500 million people 
+                      With our API, your business can take payments from over 500 million people
                       in 22 European countries.
                     </p>
                   </div>

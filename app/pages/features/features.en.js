@@ -88,7 +88,7 @@ export default class FeaturesEn extends React.Component {
                     </a>
                   </li>
                 </ul>
-                <Translation locales='en-GB'>
+                <IfLocale hasInstantSignup>
                   <a href='/merchants/new' id='track-sticky-nav-merchants-new'
                     className={
                       'sticky-nav__cta btn btn--small btn--hollow u-pull-end ' +
@@ -96,7 +96,7 @@ export default class FeaturesEn extends React.Component {
                     }>
                     <Message pointer='cta.basic' />
                   </a>
-                </Translation>
+                </IfLocale>
                 <Link to='contact_sales' id='track-sticky-nav-contact-sales'
                   className={
                     'btn btn--small btn--hollow u-pull-end u-text-transform-none ' +
