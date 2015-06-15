@@ -7,7 +7,9 @@ See [How we built the new gocardless.com](https://gocardless.com/blog/how-we-bui
 
 ##### Prerequisites:
 
-- Node.js (or io.js): `brew install node`
+- Homebrew: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+- Node.js: `brew install node`
+- Local node modules in `$PATH`: `export PATH="node_modules/.bin:$PATH"`
 
 ##### Dependencies
 
@@ -261,7 +263,7 @@ Static app: `app/public/`
 3. Prospect forms are broken
    You need to run the gocardless app at: `gocardless.dev:3000`
 
-## Adding a job ad
+## Adding a job ad (same for any page)
 
 1. Add content (e.g. `app/pages/jobs/positions/hiring-assistant.js`)
 
@@ -286,3 +288,31 @@ jobs_hiring_assistant: {
   description: '',
 },
 ```
+
+# Troublshooting errors
+
+
+## Could not find Message pointer:
+
+Example error:
+```
+Uncaught ReferenceError: Could not find Message pointer: home.test
+```
+
+For the current locale/lang add `home.test` to messages, e.g. `app/messages/en.js`:
+
+```
+home: {
+  test: 'Test',
+},
+```
+
+## Invariant Violation
+
+Example error:
+```
+Uncaught Error: Invariant Violation: Cannot find a route named "pro-features"
+```
+
+A link name can't be found. Find the `<Link to="pro-features" ...>` and check it
+exists in `app/router/routes.js`.

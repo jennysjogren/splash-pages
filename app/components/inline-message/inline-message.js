@@ -35,7 +35,7 @@ function getMessage({ currentLocale, locale, givenContent, pointer, messages }) 
     return givenContent;
   }
 
-  throw new ReferenceError(`Could not find Intl pointer: ${pointer}`);
+  throw new ReferenceError(`Could not find Message pointer: ${pointer}, locale: ${currentLocale}`);
 }
 
 export default class InlineMessage extends React.Component {
